@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id ="@+id/spacer"
+        android:layout_width="77dp"
+        android:layout_height="50dp">
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_time"
+        android:textColor="@color/black"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@id/trip_driver"
+        tools:text="9:00 AM"
+        android:textSize="14sp"
+        style="trip">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/duration"
+        android:textColor="@color/black"
+        android:layout_toLeftOf="@id/trip_driver"
+        android:layout_below="@id/start_time"
+        android:textSize="14sp"
+        tools:text="Duration:"
+        style="trip">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:id="@+id/duration_time"
+        android:textColor="@color/black"
+        android:layout_below="@id/duration"
+        android:layout_toLeftOf="@id/trip_driver"
+        tools:text="2.5 hours"
+        android:textSize="14sp"
+        style="trip">
+    </TextView>
+
+    <TextView
+        android:id="@+id/trip_name"
+        style="trip"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/spacer"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="Trip Name"></TextView>
+
+    <TextView
+        android:id="@+id/trip_driver"
+        style="trip"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trip_name"
+        android:layout_toEndOf="@id/spacer"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:text="Driven by: ">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/seat"
+        style="trip"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trip_driver"
+        android:layout_toEndOf="@id/spacer"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:text="2/4 Seats Filled"></TextView>
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="2dp"-->
+    <!--        android:background ="@color/black"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop = "10dp"
+        android:layout_below="@+id/seat"
+        android:id="@+id/line"
+        android:background ="@color/black"
+        android:orientation="horizontal" />
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/linetwo"-->
+    <!--        android:layout_width="2dp"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_marginLeft="-12dp"-->
+    <!--        android:layout_toRightOf="@+id/duration"-->
+    <!--        android:background="@color/black" />-->
+
+    <Button
+        android:id="@+id/requestTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/seat"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@color/white"
+        android:layout_above="@id/line"
+        android:text="Request" />
+
+
+</RelativeLayout>

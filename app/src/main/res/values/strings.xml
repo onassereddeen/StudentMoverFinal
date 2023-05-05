@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Trips</string>
+    <string name="by_proceeding_you_also_agree_to_the_terms_of_service_and_privacy_policy" />
+    <string name="rollins_email" />
+    <string name="please_sign_in_using_your_rollins_id_and_password" />
+    <string name="studentmover_sign_in" />
+</resources>

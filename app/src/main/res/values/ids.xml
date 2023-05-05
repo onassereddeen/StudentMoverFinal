@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="start_time" type="id" />
+    <item name="duration" type="id" />
+    <item name="duration_time" type="id" />
+    <item name="trip_name" type="id" />
+    <item name="trip_driver" type="id" />
+    <item name="seat" type="id" />
+</resources>
