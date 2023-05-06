@@ -4,4 +4,5 @@
     <string name="rollins_email" />
     <string name="please_sign_in_using_your_rollins_id_and_password" />
     <string name="studentmover_sign_in" />
+    <string name="date_string">%s</string>
 </resources>

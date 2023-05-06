@@ -7,6 +7,10 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Dashboard extends AppCompatActivity {
 
@@ -16,9 +20,18 @@ public class Dashboard extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+
         // Initialize UI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard);
+
+        // Calendar Date
+        TextView currentDateTextView = findViewById(R.id.currentDateTextView);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("EEE, MMM d, yyyy");
+        String currentDate = dateFormat.format(new Date());
+        String dateString = getString(R.string.date_string, currentDate);
+        currentDateTextView.setText(dateString);
+
 
         //Get references of the buttons
         firstButton = findViewById(R.id.button1);
@@ -69,6 +82,29 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        // set the setOnClickListener on SearchForRides Button
+//        secondButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // Add code to be executed when the button is clicked
+//            }
+//        });
+//
+//        // set the setOnClickListener on ViewRides Button
+//        thirdButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // Add code to be executed when the button is clicked
+//            }
+//        });
+//
+//        // set the setOnClickListener on Settings Button
+//        fourthButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // Add code to be executed when the button is clicked
+//            }
+//        });
     }
 
     // Overrides method, if the home button is clicked, the user is returned to original page
