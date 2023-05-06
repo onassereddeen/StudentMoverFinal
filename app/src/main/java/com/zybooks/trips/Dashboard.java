@@ -69,29 +69,6 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        // set the setOnClickListener on SearchForRides Button
-//        secondButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                // Add code to be executed when the button is clicked
-//            }
-//        });
-//
-//        // set the setOnClickListener on ViewRides Button
-//        thirdButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                // Add code to be executed when the button is clicked
-//            }
-//        });
-//
-//        // set the setOnClickListener on Settings Button
-//        fourthButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                // Add code to be executed when the button is clicked
-//            }
-//        });
     }
 
     // Overrides method, if the home button is clicked, the user is returned to original page
