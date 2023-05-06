@@ -34,14 +34,14 @@ public class FindTrips extends AppCompatActivity {
 
         List<Trip> items = new ArrayList<Trip>();
         items.add(new Trip("Universal", "Marcia", "2/4 seats filled", "9:00 AM", "2.5 hours"));
-        items.add(new Trip("Universal", "Marcia", "2/4 seats filled", "9:00 AM", "2.5 hours"));
-        items.add(new Trip("Universal", "Marcia", "2/4 seats filled", "9:00 AM", "2.5 hours"));
-        items.add(new Trip("Universal", "Marcia", "2/4 seats filled", "9:00 AM", "2.5 hours"));
-        items.add(new Trip("Universal", "Marcia", "2/4 seats filled", "9:00 AM", "2.5 hours"));
-        items.add(new Trip("Universal", "Marcia", "2/4 seats filled", "9:00 AM", "2.5 hours"));
-        items.add(new Trip("Universal", "Marcia", "2/4 seats filled", "9:00 AM", "2.5 hours"));
-        items.add(new Trip("Universal", "Marcia", "2/4 seats filled", "9:00 AM", "2.5 hours"));
-        items.add(new Trip("Universal", "Marcia", "2/4 seats filled", "9:00 AM", "2.5 hours"));
+        items.add(new Trip("Disney", "Mickey Mouse", "3/4 seats filled", "10:00 AM", "4.5 hours"));
+        items.add(new Trip("Daytona Beach", "Spongebob", "1/4 seats filled", "11:00 AM", "1.5 hours"));
+        items.add(new Trip("Pinocchio's Village", "Jiminy Cricket", "3/4 seats filled", "12:00 PM", ".5 hours"));
+        items.add(new Trip("Trader Joe's", "One Hungry Boi", "1/4 seats filled", "1:30 PM", ".5 hours"));
+        items.add(new Trip("Publix", "Billy", "2/4 seats filled", "2:00 PM", "2.5 hours"));
+        items.add(new Trip("The Ravenous Pig", "Big Bad Wolf", "2/3 seats filled", "4:00 PM", "1.0 hours"));
+        items.add(new Trip("Downtown", "Pedro Pascal", "3/6 seats filled", "5:00 PM", "2.5 hours"));
+        items.add(new Trip("Hollywood", "Robert Downey Jr.", "5/7 seats filled", "9:00 PM", "30 hours"));
         recyclerView.setLayoutManager(new LinearLayoutManager(FindTrips.this));
         recyclerView.setAdapter(new TripAdapter(getApplicationContext(), items));
 

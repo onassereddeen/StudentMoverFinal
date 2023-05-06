@@ -14,11 +14,15 @@ public class MainActivity extends AppCompatActivity {
     // Declare Variables
     Button signIn;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Initialize UI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        setTitle("Sign-In");
 
         // Get the button reference
         signIn = findViewById(R.id.signInButton);
