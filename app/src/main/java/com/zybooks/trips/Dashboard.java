@@ -1,6 +1,7 @@
 package com.zybooks.trips;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
@@ -31,6 +32,9 @@ public class Dashboard extends AppCompatActivity {
         String currentDate = dateFormat.format(new Date());
         String dateString = getString(R.string.date_string, currentDate);
         currentDateTextView.setText(dateString);
+
+        // Set Date color to black
+        currentDateTextView.setTextColor(Color.BLACK);
 
 
         //Get references of the buttons
